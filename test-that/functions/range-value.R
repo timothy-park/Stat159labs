@@ -1,6 +1,6 @@
-range_value <- function(x, na.rm = FALSE) {
+range_value <- function(x, na.rm = NULL) {
 	if (na.rm == TRUE) {
-		max(x, na.rm = na.rm) - min(x, na.rm = na.rm)
+		max(x, na.rm = TRUE) - min(x, na.rm = TRUE)
 	}
 	else {
 		max(x) - min(x)

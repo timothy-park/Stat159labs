@@ -1,3 +1,3 @@
 missing_values <- function(x) {
-	sum(is.na(x))
+	as.double(sum(is.na(x)))
 }
